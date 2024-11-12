@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 1px dotted red;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #592200;
+  opacity: 0.7; /* Firefox */
+}
+
+body {
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+  height: 1000px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/food-bg-removebg-preview.png');
+  background-color: #FFEFE6;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+p{
+  display: inline;
+}
+
+ul,ol{
+  list-style-position: inside;
+}

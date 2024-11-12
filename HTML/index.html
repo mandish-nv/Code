@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipetopia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/general.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/hero.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div>
+        <i class="fa-solid fa-bars fa-2x" style="color: #993b00"></i>
+      </div>
+      <div>
+        <p class="title-text">Recipetopia</p>
+      </div>
+      <div class="right-utilities">
+        <div class="search-box">
+          <div>
+            <input
+              type="text"
+              placeholder="Search box"
+              class="search-box-input"
+            />
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-magnifying-glass fa-xl"
+              style="color: #993b00"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
+        </div>
+        <div class="profile-picture-container"  onclick="location.href='recipe-upload.html';">
+          <img
+            src="../images/chef.jpg"
+            alt="profile picture"
+            class="profile-picture-image"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section-main">
+      <div class="title-chef-container">
+        <img
+          src="../images/pexels-miquel-ferran-gomez-figueroa-2172703-3814446-removebg-preview.png"
+          alt="chef-photo"
+          class="title-chef"
+        />
+      </div>
+      <div class="hero-section-intro-division">
+        <div class="hero-section-title">
+          <div>
+            <img
+              src="../images/Icons/recipetopia.png"
+              alt="logo"
+              class="logo"
+            />
+          </div>
+          <div>
+            <p class="title-text title-text-enlarge">Recipetopia</p>
+          </div>
+        </div>
+        <div>
+          <p class="title-text-description">
+            Welcome to Recipetopia, your ultimate culinary destination! Discover
+            a diverse collection of delicious recipes, from quick dinners to
+            gourmet meals. Join our community, share your favorites, and explore
+            new flavors with us.
+          </p>
+        </div>
+        <div>
+          <p class="title-text-description title-text-description-enlarge">
+            Happy cooking!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="slider-content-container">
+        <div class="slider-content">
+          <div class="recipe-image-container">
+            <img src="../images/Icons/lunch.png" class="slider-icon" />
+          </div>
+          <div>
+            <p class="slider-content-text">Lunch</p>
+          </div>
+        </div>
+        <div class="slider-content">
+          <div>
+            <img src="../images/Icons/lunch.png" class="slider-icon" />
+          </div>
+          <div>
+            <p class="slider-content-text">Lunch</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow left-arrow"></div>
+      <div class="arrow right-arrow"></div>
+    </section>
+
+    <main>
+      <section class="recipe">
+        <div>
+          <p class="recipe-title">RECIPE</p>
+        </div>
+        <div class="recipe-container-main">
+          <div class="recipe-container">
+            <div class="recipe-slot" onclick="location.href='recipe.html';"> 
+              <div class="favorites-absolute">
+                <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
+              </div>
+              <div>
+                <img src="../images/Food/momo.jpg" class="recipe-image" />
+              </div>
+              <!-- add favourites button, interactive view, create table (recipeName,chefName,recipeImage,category,views) -->
+              <div class="recipe-info">
+                <div>
+                  <p>Buff mo:mo:</p>
+                </div>
+                <div>
+                  <p>Chef Ram</p>
+                </div>
+                <div>
+                  <p>Category: Snack</p>
+                </div>
+                <div>
+                  <p>Rating</p>
+                </div>
+                <div>
+                  <p>Views</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div>
+            <div class="view-more-button">
+              <p class="view-more-text">View more</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-left">
+        <div>
+          <p>Ready to cook?</p>
+          <p>Sign up for our weekly newsletters!</p>
+        </div>
+        <div class="email-entry">
+          <div>
+            <input type="email" placeholder="Enter your email">
+          </div>
+          <div>
+            <input type="submit" value="Sign up">
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Follow us on other platforms</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div>
+          <ul>
+            <li>About us</li>
+            <li>Terms of Services</li>
+            <li>Editorial Guidelines</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>FAQ</li>
+            <li>Terms of Use</li>
+            <li>Contact Us</li>
+            <li>Review</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
