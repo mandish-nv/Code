@@ -1,35 +1,53 @@
 // recipe-info
+var ajax = new XMLHttpRequest();
+ajax.open("GET", "../PHP/recipe-view.php", true);
+ajax.send();
 
+ajax.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    var data = JSON.parse(this.responseText);
+    console.log(data);
 
+    let recipeContainer = "";
+    for (var a = 0; a < data.length; a++) {
+      let recipeName = data[a].recipeName;
+      let chefName = data[a].chefName;
+      let category = data[a].category;
+      let difficultyLevel = data[a].difficultyLevel;
+      let recipeImage = data[a].recipeImage;
+      let views = data[a].views;
 
-
-
-let recipeContainer = 
-`
- <div class="recipe-slot" onclick="location.href='recipe.html';"> 
+      recipeContainer += 
+      `
+            <div class="recipe-slot" onclick="location.href='recipe.html';"> 
               <div class="favorites-absolute">
                 <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
               </div>
               <div>
-                <img src="../images/Food/momo.jpg" class="recipe-image" />
+                <img src="../uploadedImages/${recipeImage}" class="recipe-image" />
               </div>
-              <!-- add favourites button, interactive view, create table (recipeName,chefName,recipeImage,category,views) -->
               <div class="recipe-info">
                 <div>
-                  <p>Buff mo:mo:</p>
+                  <p>${recipeName}</p>
                 </div>
                 <div>
-                  <p>Chef Ram</p>
+                  <p>${chefName}</p>
                 </div>
                 <div>
-                  <p>Category: Snack</p>
+                  <p>Category: ${category}</p>
                 </div>
                 <div>
-                  <p>Rating</p>
+                  <p>Difficulty level: ${difficultyLevel}</p>
                 </div>
                 <div>
-                  <p>Views</p>
+                  <p>${views} views</p>
                 </div>
               </div>
             </div>
-`;
+
+        `;
+    }
+    console.log(recipeContainer);
+    document.querySelector(".recipe-container").innerHTML = recipeContainer; 
+  }
+};
