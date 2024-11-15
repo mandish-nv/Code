@@ -1,11 +1,8 @@
-// recipe-info
-
-//import and export header, footer
-//complete parameter based display for recipe
-
 import { insertHeader } from "./header.js";
+import { insertFooter } from "./footer.js";
 
 insertHeader();
+insertFooter();
 
 var ajax = new XMLHttpRequest();
 ajax.open("GET", "../PHP/recipeDBdisplay.php", true);
