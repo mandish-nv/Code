@@ -1,3 +1,7 @@
+<?php
+  include "recipeinfoDBdisplay.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,7 +53,7 @@
           <div class="recipe-title-main">
             <div class="recipe-title-main-division1">
               <div>
-                <p class="recipe-name">Buff mo:mo:</p>
+                <p class="recipe-name"><?php echo $row["recipeName"] ?></p>
               </div>
               <div>
                 <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
@@ -57,7 +61,7 @@
             </div>
             <div class="recipe-title-main-division2">
               <div>
-                <p>Chef Ram</p>
+                <p><?php echo $row["chefName"] ?></p>
               </div>
               <div>
                 <i class="fa-regular fa-star fa-xl" style="color: #ffb427"></i>
@@ -71,18 +75,18 @@
 
           <div class="recipe-title-description">
             <div>
-              <p>Category: Snack</p>
+              <p>Category: <?php echo $row["category"] ?></p>
             </div>
             <div>
-              <p>Difficulty Level: Intermediate</p>
-              <p>Serving Portion: 4 servings (approx. 20)</p>
-              <p>Time required: 1hr 30min</p>
+              <p>Difficulty Level: <?php echo $row["difficultyLevel"] ?></p>
+              <p>Serving Portion: <?php echo $row["servingPortion"] ?> servings</p>
+              <p>Time required: <?php echo $row["timeRequiredHour"] ?>hr <?php echo $row["timeRequiredSecond"] ?>sec</p>
             </div>
           </div>
         </div>
 
         <div class="recipe-title-right">
-          <img src="../images/food/momo.jpg" class="recipe-title-image" />
+          <img src="../uploadedImages/<?php echo $row["recipeImage"] ?>" class="recipe-title-image" />
         </div>
       </section>
 
@@ -92,6 +96,9 @@
         </div>
         <div>
           <div class="ingredients-content-container">
+            <?php echo $row["ingredientsRequired"] ?>
+          </div>
+          <!-- <div class="ingredients-content-container">
             <div>
               <p>For the Filling:</p>
             </div>
@@ -136,7 +143,7 @@
                 <li>1/2 cup water (or as needed)</li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -148,6 +155,9 @@
           <p>Procedure</p>
         </div>
         <div>
+          <?php echo $row["procedureSteps"] ?>
+        </div>
+        <!-- <div>
           <ol>
             <li>Prepare the Dough:</li>
             <p>
@@ -196,7 +206,7 @@
             <li>Serve:</li>
             <p>Serve the steamed momos hot with the prepared dipping sauce.</p>
           </ol>
-        </div>
+        </div> -->
       </section>
 
       <section id="additional-information-section">
@@ -210,8 +220,7 @@
             </div>
             <div>
               <p>
-                Calories: 300-350 kcal Protein: 20-25g Carbohydrates: 35-40g
-                Fat: 10-15g Fiber: 2-3g
+                <?php echo $row["nutritionalFacts"] ?>
               </p>
             </div>
           </div>
@@ -220,7 +229,8 @@
               <p>Tips & Tricks</p>
             </div>
             <div>
-              <ul>
+              <?php echo $row["tipsTricks"] ?>
+              <!-- <ul>
                 <li>
                   Ensure the dough is soft but not sticky, and let it rest for
                   at least 30 minutes to make it easier to work with.
@@ -233,7 +243,7 @@
                   Roll the dough into thin, even wrappers to ensure they cook
                   evenly and are not too doughy.
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
