@@ -96,54 +96,12 @@
         </div>
         <div>
           <div class="ingredients-content-container">
-            <?php echo $row["ingredientsRequired"] ?>
+            <?php 
+              //echo $row["ingredientsRequired"] 
+              $file_content = file_get_contents(filename: "../uploadedTexts/uploadedIngredientsRequired/".$row["ingredientsRequired"] );
+              echo nl2br(htmlspecialchars($file_content));
+            ?>
           </div>
-          <!-- <div class="ingredients-content-container">
-            <div>
-              <p>For the Filling:</p>
-            </div>
-            <div>
-              <ul>
-                <li>500g ground buffalo meat (buff)</li>
-                <li>1 medium onion, finely chopped</li>
-                <li>1/2 cup green onions, finely chopped</li>
-                <li>1/2 cup cilantro, finely chopped</li>
-                <li>4 cloves garlic, minced</li>
-                <li>1-inch ginger, minced</li>
-                <li>2 tablespoons soy sauce</li>
-                <li>1 tablespoon mustard oil (optional)</li>
-                <li>Salt and pepper to taste</li>
-                <li>1 teaspoon coriander powder</li>
-                <li>2 tablespoons vegetable oil</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ingredients-content-container">
-            <div>
-              <p>For the Dipping Sauce:</p>
-            </div>
-            <div>
-              <ul>
-                <li>2 medium tomatoes</li>
-                <li>2 dried red chilies (adjust to taste)</li>
-                <li>2 cloves garlic</li>
-                <li>1 tablespoon vegetable oil</li>
-                <li>Salt to taste</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ingredients-content-container">
-            <div>
-              <p>For the Dough:</p>
-            </div>
-            <div>
-              <ul>
-                <li>2 cups all-purpose flour</li>
-                <li>1/4 teaspoon salt</li>
-                <li>1/2 cup water (or as needed)</li>
-              </ul>
-            </div>
-          </div> -->
         </div>
       </section>
 
@@ -155,58 +113,12 @@
           <p>Procedure</p>
         </div>
         <div>
-          <?php echo $row["procedureSteps"] ?>
+          <?php 
+          //echo $row["procedureSteps"] 
+          $file_content = file_get_contents(filename: "../uploadedTexts/uploadedProcedureSteps/".$row["procedureSteps"] );
+          echo nl2br(htmlspecialchars($file_content));
+          ?>
         </div>
-        <!-- <div>
-          <ol>
-            <li>Prepare the Dough:</li>
-            <p>
-              In a large mixing bowl, combine the all-purpose flour and salt.
-              Gradually add water while kneading until a smooth, pliable dough
-              is formed. Cover the dough with a damp cloth and let it rest for
-              at least 30 minutes.
-            </p>
-
-            <li>Make the Filling:</li>
-            <p>
-              In a large bowl, mix the ground buffalo meat with the chopped
-              onions, green onions, cilantro, garlic, and ginger. Add the soy
-              sauce, mustard oil (if using), turmeric powder, cumin powder,
-              coriander powder, salt, and pepper. Mix well to combine. Add the
-              vegetable oil to the mixture and combine thoroughly. This will
-              help keep the filling moist.
-            </p>
-
-            <li>Prepare the Dipping Sauce:</li>
-            <p>
-              Roast the tomatoes and dried red chilies on an open flame or in a
-              hot pan until charred. Blend the roasted tomatoes, chilies,
-              garlic, and sesame seeds into a smooth paste. Heat the oil in a
-              pan and cook the paste for a few minutes until thickened. Add salt
-              to taste.
-            </p>
-
-            <li>Assemble the Momos:</li>
-            <p>
-              Roll the dough into a long log and cut it into small equal-sized
-              pieces. Roll each piece into a thin, round wrapper (about 3 inches
-              in diameter). Place a tablespoon of the filling in the center of
-              each wrapper. Fold and pleat the edges to seal the dumpling.
-              Repeat with the remaining dough and filling.
-            </p>
-
-            <li>Steam the Momos:</li>
-            <p>
-              Lightly grease a steamer basket with oil. Arrange the momos in the
-              basket, making sure they don't touch each other. Steam the momos
-              for about 10-12 minutes, until the dough is cooked and slightly
-              translucent.
-            </p>
-
-            <li>Serve:</li>
-            <p>Serve the steamed momos hot with the prepared dipping sauce.</p>
-          </ol>
-        </div> -->
       </section>
 
       <section id="additional-information-section">
@@ -220,7 +132,11 @@
             </div>
             <div>
               <p>
-                <?php echo $row["nutritionalFacts"] ?>
+                <?php 
+                //echo $row["nutritionalFacts"] 
+                $file_content = file_get_contents(filename: "../uploadedTexts/uploadedNutritionalFacts/".$row["nutritionalFacts"] );
+                echo nl2br(htmlspecialchars($file_content));
+                ?>
               </p>
             </div>
           </div>
@@ -229,21 +145,11 @@
               <p>Tips & Tricks</p>
             </div>
             <div>
-              <?php echo $row["tipsTricks"] ?>
-              <!-- <ul>
-                <li>
-                  Ensure the dough is soft but not sticky, and let it rest for
-                  at least 30 minutes to make it easier to work with.
-                </li>
-                <li>
-                  Mix the filling ingredients well to ensure even distribution
-                  of flavors. Chilling the filling slightly helps in handling.
-                </li>
-                <li>
-                  Roll the dough into thin, even wrappers to ensure they cook
-                  evenly and are not too doughy.
-                </li>
-              </ul> -->
+              <?php 
+              //echo $row["tipsTricks"] 
+              $file_content = file_get_contents(filename: "../uploadedTexts/uploadedTipsTricks/".$row["tipsTricks"] );
+              echo nl2br(htmlspecialchars($file_content));
+              ?>
             </div>
           </div>
         </div>

@@ -1,0 +1,46 @@
+<!-- <div class="ingredients-content-container">
+            <div>
+              <p>For the Filling:</p>
+            </div>
+            <div>
+              <ul>
+                <li>500g ground buffalo meat (buff)</li>
+                <li>1 medium onion, finely chopped</li>
+                <li>1/2 cup green onions, finely chopped</li>
+                <li>1/2 cup cilantro, finely chopped</li>
+                <li>4 cloves garlic, minced</li>
+                <li>1-inch ginger, minced</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>1 tablespoon mustard oil (optional)</li>
+                <li>Salt and pepper to taste</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>2 tablespoons vegetable oil</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ingredients-content-container">
+            <div>
+              <p>For the Dipping Sauce:</p>
+            </div>
+            <div>
+              <ul>
+                <li>2 medium tomatoes</li>
+                <li>2 dried red chilies (adjust to taste)</li>
+                <li>2 cloves garlic</li>
+                <li>1 tablespoon vegetable oil</li>
+                <li>Salt to taste</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ingredients-content-container">
+            <div>
+              <p>For the Dough:</p>
+            </div>
+            <div>
+              <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/2 cup water (or as needed)</li>
+              </ul>
+            </div>
+          </div> -->

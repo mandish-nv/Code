@@ -4,14 +4,9 @@ $chefName = $_GET['chefName'];
 
 $sql = "SELECT * FROM recipe where recipeName= '" . $recipeName . "' and chefName = '" . $chefName . "';";
 
-
 $conn = mysqli_connect("localhost", "root", "", "recipetopia");
 $result = mysqli_query($conn,$sql );
 $row = mysqli_fetch_assoc($result);
-
-
-
-
 
 // $category=$_GET['category'];
 // $difficultyLevel=$_GET['difficultyLevel'];

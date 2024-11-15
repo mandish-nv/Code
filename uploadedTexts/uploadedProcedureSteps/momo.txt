@@ -1,0 +1,50 @@
+<!-- <div>
+          <ol>
+            <li>Prepare the Dough:</li>
+            <p>
+              In a large mixing bowl, combine the all-purpose flour and salt.
+              Gradually add water while kneading until a smooth, pliable dough
+              is formed. Cover the dough with a damp cloth and let it rest for
+              at least 30 minutes.
+            </p>
+
+            <li>Make the Filling:</li>
+            <p>
+              In a large bowl, mix the ground buffalo meat with the chopped
+              onions, green onions, cilantro, garlic, and ginger. Add the soy
+              sauce, mustard oil (if using), turmeric powder, cumin powder,
+              coriander powder, salt, and pepper. Mix well to combine. Add the
+              vegetable oil to the mixture and combine thoroughly. This will
+              help keep the filling moist.
+            </p>
+
+            <li>Prepare the Dipping Sauce:</li>
+            <p>
+              Roast the tomatoes and dried red chilies on an open flame or in a
+              hot pan until charred. Blend the roasted tomatoes, chilies,
+              garlic, and sesame seeds into a smooth paste. Heat the oil in a
+              pan and cook the paste for a few minutes until thickened. Add salt
+              to taste.
+            </p>
+
+            <li>Assemble the Momos:</li>
+            <p>
+              Roll the dough into a long log and cut it into small equal-sized
+              pieces. Roll each piece into a thin, round wrapper (about 3 inches
+              in diameter). Place a tablespoon of the filling in the center of
+              each wrapper. Fold and pleat the edges to seal the dumpling.
+              Repeat with the remaining dough and filling.
+            </p>
+
+            <li>Steam the Momos:</li>
+            <p>
+              Lightly grease a steamer basket with oil. Arrange the momos in the
+              basket, making sure they don't touch each other. Steam the momos
+              for about 10-12 minutes, until the dough is cooked and slightly
+              translucent.
+            </p>
+
+            <li>Serve:</li>
+            <p>Serve the steamed momos hot with the prepared dipping sauce.</p>
+          </ol>
+        </div> -->

@@ -90,19 +90,19 @@
     <br><br>
 
     <p>Ingredients required: </p>
-    <input type="text" name="ingredientsRequired" style="height: 8rem; width: 50rem;">
+    <textarea name="ingredientsRequired" style="height: 8rem; width: 50rem;"></textarea>
     <br><br>
 
     <p>Procedure: </p>
-    <input type="text" name="procedure" style="height: 8rem; width: 50rem;">
+    <textarea name="procedure" style="height: 8rem; width: 50rem;"></textarea>
     <br><br>
 
     <p>Nutritional Facts: </p>
-    <input type="text" name="nutritionalFacts" style="height: 5rem; width: 50rem;">
+    <textarea name="nutritionalFacts" style="height: 5rem; width: 50rem;"></textarea>
     <br><br>
 
     <p>Tips & Tricks: </p>
-    <input type="text" name="tipsTricks" style="height: 5rem; width: 50rem;">
+    <textarea name="tipsTricks" style="height: 5rem; width: 50rem;"></textarea>
     <br><br>
 
     <input type="submit" value="Submit">
