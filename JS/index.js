@@ -1,6 +1,14 @@
 // recipe-info
+
+//import and export header, footer
+//complete parameter based display for recipe
+
+import { insertHeader } from "./header.js";
+
+insertHeader();
+
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "../PHP/recipe-view.php", true);
+ajax.open("GET", "../PHP/recipeDBdisplay.php", true);
 ajax.send();
 
 ajax.onreadystatechange = function () {
@@ -19,7 +27,7 @@ ajax.onreadystatechange = function () {
 
       recipeContainer += 
       `
-            <div class="recipe-slot" onclick="location.href='recipe.html';"> 
+            <div class="recipe-slot" onclick="location.href='../PHP/recipe.php?recipeName=${recipeName}&chefName=${chefName}';"> 
               <div class="favorites-absolute">
                 <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
               </div>
@@ -49,5 +57,7 @@ ajax.onreadystatechange = function () {
     }
     console.log(recipeContainer);
     document.querySelector(".recipe-container").innerHTML = recipeContainer; 
+
+    
   }
 };

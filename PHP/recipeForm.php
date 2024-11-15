@@ -42,13 +42,13 @@
       <div>
         <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
       </div>
-      <div class="profile-picture-container" onclick="location.href='../PHP/recipe-upload.php';">
+      <div class="profile-picture-container" onclick="location.href='../PHP/recipeForm.php';">
         <img src="../images/chef.jpg" alt="profile picture" class="profile-picture-image" />
       </div>
     </div>
   </header>
 
-  <form name="myForm" action="recipe.php" method="post" enctype="multipart/form-data" style="padding-top: 5rem;">
+  <form name="myForm" action="recipeDBinsert.php" method="post" enctype="multipart/form-data" style="padding-top: 5rem;">
     <p>Recipe name: </p>
     <input type="text" name="recipeName">
     <br><br>
