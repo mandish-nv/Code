@@ -167,5 +167,3 @@
     <script type="module" src="../JS/recipe.js"></script>
   </body>
 </html>
-
-<!-- Nav bar right side -->

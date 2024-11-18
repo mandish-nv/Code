@@ -12,7 +12,7 @@ export function insertHeader() {
           <input type="text" placeholder="Search box" class="search-box-input" />
         </div>
         <div>
-          <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #993b00"></i>
+          <i class="fa-solid fa-magnifying-glass fa-xl iconSearch" style="color: #993b00"></i>
         </div>
       </div>
       <div>
@@ -25,4 +25,15 @@ export function insertHeader() {
   `;
 
   document.querySelector("header").innerHTML = header;
+  searchQuery();
+}
+
+function searchQuery(){
+  document.querySelectorAll(".iconSearch").forEach((button) => {
+    button.addEventListener("click", () => {
+      const searchValue = document.querySelector(".search-box-input").value;
+      location.href='../PHP/searchDisplay.php?search='+searchValue;
+    });
+  });
+
 }

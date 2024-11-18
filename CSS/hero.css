@@ -37,6 +37,7 @@
   font-weight: 500;
   font-size: 10rem;
   line-height: 2rem;
+  cursor: default;
 }
 
 .title-text-description{
@@ -186,6 +187,7 @@
   padding: 0.8rem;
   border: 1px solid #051C3B;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .view-more-text{

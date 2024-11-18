@@ -51,6 +51,10 @@ header{
   color: #592200;
 }
 
+.search-box-input:focus{
+  outline: none;
+}
+
 .profile-picture-container{
   display: flex;
   align-items: center;

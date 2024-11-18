@@ -3,11 +3,18 @@ import { insertFooter } from "./footer.js";
 
 insertHeader();
 insertFooter();
-recipeSlotDisplay();
+searchRecipeSlotDisplay();
 
-export function recipeSlotDisplay() {
+export function searchRecipeSlotDisplay() {
+  const url = new URL(window.location.href);
+  const searchParameter = url.searchParams.get('search');
+  if (!searchParameter) {
+    console.error("Search parameter is missing in the URL.");
+    return;
+  }
+
   var ajax = new XMLHttpRequest();
-  ajax.open("GET", "../PHP/recipeDBdisplay.php", true);
+  ajax.open("GET", "../PHP/searchDBdisplay.php?search="+searchParameter, true);
   ajax.send();
 
   ajax.onreadystatechange = function () {
