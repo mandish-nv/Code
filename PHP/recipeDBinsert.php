@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $difficultyLevel = $_POST['difficultyLevel'];
   $servingPortion = $_POST['servingPortion'];
   $timeRequiredHour = $_POST['timeRequiredHour'];
-  $timeRequiredSecond = $_POST['timeRequiredSecond'];
+  $timeRequiredMinute = $_POST['timeRequiredMinute'];
   // $ingredientsRequired = $_POST['ingredientsRequired'];
   //$procedureSteps = $_POST['procedure'];
   //$nutritionalFacts = $_POST['nutritionalFacts'];
@@ -52,9 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   $conn = mysqli_connect($servername, $username, $password, $database);
 
-  //(recipeName,chefName,category,difficultyLevel,servingPortion,timeRequiredHour,timeRequiredSecond,ingredientRequired,procedureSteps,nutritionalFacts,tipsTricks,recipeImage,views)
+  //(recipeName,chefName,category,difficultyLevel,servingPortion,timeRequiredHour,timeRequiredMinute,ingredientRequired,procedureSteps,nutritionalFacts,tipsTricks,recipeImage,views)
   //default value hala
-  $sql = "insert into recipe values ('" . $recipeName . "','" . $chefName . "','" . $category . "','" . $difficultyLevel . "'," . $servingPortion . "," . $timeRequiredHour . "," . $timeRequiredSecond . ",'" . $file_name_ir . "','" . $file_name_ps . "','" . $file_name_nf . "','" . $file_name_tt . "','" . $file_name . "',0);";
+  $sql = "insert into recipe values ('" . $recipeName . "','" . $chefName . "','" . $category . "','" . $difficultyLevel . "'," . $servingPortion . "," . $timeRequiredHour . "," . $timeRequiredMinute . ",'" . $file_name_ir . "','" . $file_name_ps . "','" . $file_name_nf . "','" . $file_name_tt . "','" . $file_name . "',0);";
   echo $sql;
   mysqli_query($conn, $sql);
 

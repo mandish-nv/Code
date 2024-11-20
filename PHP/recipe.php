@@ -80,7 +80,7 @@
             <div>
               <p>Difficulty Level: <?php echo $row["difficultyLevel"] ?></p>
               <p>Serving Portion: <?php echo $row["servingPortion"] ?> servings</p>
-              <p>Time required: <?php echo $row["timeRequiredHour"] ?>hr <?php echo $row["timeRequiredSecond"] ?>sec</p>
+              <p>Time required: <?php echo $row["timeRequiredHour"] ?>hr <?php echo $row["timeRequiredMinute"] ?>min</p>
             </div>
           </div>
         </div>

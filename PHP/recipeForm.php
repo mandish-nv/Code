@@ -35,11 +35,18 @@
     <br><br>
 
     <p>Category: </p>
-    <select name="category">
-      <option>Snack</option>
+    <select name="category" id="mySelect">
+      <option>Snacks</option>
       <option>Lunch</option>
       <option>Drink</option>
       <option>Dinner</option>
+      <option>Cuisine</option>
+      <option>Healthy</option>
+      <option>Non-veg</option>
+      <option>Veg</option>
+      <option>Glutten-free</option>
+      <option>Appetizers</option>
+      <option>Desserts</option>
     </select>
     <br><br>
 
@@ -59,7 +66,7 @@
 
     <p>Time required: </p>
     <input type="number" name="timeRequiredHour">hr
-    <input type="number" name="timeRequiredSecond">sec
+    <input type="number" name="timeRequiredMinute">min
     <br><br>
 
     <p>Recipe image: </p>
