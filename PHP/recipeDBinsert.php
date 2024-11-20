@@ -7,15 +7,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $servingPortion = $_POST['servingPortion'];
   $timeRequiredHour = $_POST['timeRequiredHour'];
   $timeRequiredMinute = $_POST['timeRequiredMinute'];
-  // $ingredientsRequired = $_POST['ingredientsRequired'];
-  //$procedureSteps = $_POST['procedure'];
-  //$nutritionalFacts = $_POST['nutritionalFacts'];
-  //$tipsTricks = $_POST['tipsTricks'];
 
   // Image
   $file_name = $_FILES['recipeImage']['name'];
   $tempname = $_FILES['recipeImage']['tmp_name'];
   $folder = '../uploadedImages/' . $file_name;
+  move_uploaded_file($tempname, $folder);
+  echo "File uploaded successfully.";
 
   //ingredientsRequired
   $ingredientsRequired = $_POST['ingredientsRequired'];
@@ -52,20 +50,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   $conn = mysqli_connect($servername, $username, $password, $database);
 
-  //(recipeName,chefName,category,difficultyLevel,servingPortion,timeRequiredHour,timeRequiredMinute,ingredientRequired,procedureSteps,nutritionalFacts,tipsTricks,recipeImage,views)
-  //default value hala
   $sql = "insert into recipe values ('" . $recipeName . "','" . $chefName . "','" . $category . "','" . $difficultyLevel . "'," . $servingPortion . "," . $timeRequiredHour . "," . $timeRequiredMinute . ",'" . $file_name_ir . "','" . $file_name_ps . "','" . $file_name_nf . "','" . $file_name_tt . "','" . $file_name . "',0);";
   echo $sql;
   mysqli_query($conn, $sql);
-
-  // Image
-  if (move_uploaded_file($tempname, $folder)) {
-    echo "File uploaded successfully.";
-  } else {
-    echo "File not uploaded.";
-  }
-
-
 
   mysqli_close($conn);
 } else {

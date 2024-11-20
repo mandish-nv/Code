@@ -97,7 +97,6 @@
         <div>
           <div class="ingredients-content-container">
             <?php 
-              //echo $row["ingredientsRequired"] 
               $file_content = file_get_contents(filename: "../uploadedTexts/uploadedIngredientsRequired/".$row["ingredientsRequired"] );
               echo nl2br(htmlspecialchars($file_content));
             ?>
@@ -114,7 +113,6 @@
         </div>
         <div>
           <?php 
-          //echo $row["procedureSteps"] 
           $file_content = file_get_contents(filename: "../uploadedTexts/uploadedProcedureSteps/".$row["procedureSteps"] );
           echo nl2br(htmlspecialchars($file_content));
           ?>
@@ -133,7 +131,6 @@
             <div>
               <p>
                 <?php 
-                //echo $row["nutritionalFacts"] 
                 $file_content = file_get_contents(filename: "../uploadedTexts/uploadedNutritionalFacts/".$row["nutritionalFacts"] );
                 echo nl2br(htmlspecialchars($file_content));
                 ?>
@@ -146,7 +143,6 @@
             </div>
             <div>
               <?php 
-              //echo $row["tipsTricks"] 
               $file_content = file_get_contents(filename: "../uploadedTexts/uploadedTipsTricks/".$row["tipsTricks"] );
               echo nl2br(htmlspecialchars($file_content));
               ?>

@@ -84,7 +84,7 @@ function recipeCategoryDisplay() {
 
   let recipeCategoryContainer = "";
 
-  categories.forEach((element)=>{
+  categories.forEach((element) => {
     recipeCategoryContainer += `
         <div class="slider-content">
           <div class="recipe-image-container">
@@ -97,6 +97,43 @@ function recipeCategoryDisplay() {
         `;
   });
 
-  document.querySelector(".slider-content-container").innerHTML = recipeCategoryContainer;
+  document.querySelector(".slider-content-container").innerHTML =
+    recipeCategoryContainer;
 }
 recipeCategoryDisplay();
+
+function slider() {
+  const sliderWrapper = document.querySelector(".slider-content-container");
+  const sliderContainer = document.querySelector(".slider");
+
+  // Calculate the visible width excluding padding
+  const computedStyle = getComputedStyle(sliderContainer);
+  const visibleWidth =
+    sliderContainer.offsetWidth -
+    parseFloat(computedStyle.paddingLeft) -
+    parseFloat(computedStyle.paddingRight);
+
+  const sliderItems = document.querySelectorAll(".slider-content");
+  const itemWidth = sliderItems[0].offsetWidth + 18; // Include margin or gap
+  const totalItems = sliderItems.length;
+
+  const maxScrollPosition = itemWidth * totalItems - visibleWidth;
+  let currentPosition = 0;
+
+  // Next button functionality
+  document.querySelector(".right-arrow").addEventListener("click", () => {
+    if (Math.abs(currentPosition) < maxScrollPosition) {
+      currentPosition -= itemWidth;
+      sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
+    }
+  });
+
+  // Previous button functionality
+  document.querySelector(".left-arrow").addEventListener("click", () => {
+    if (currentPosition < 0) {
+      currentPosition += itemWidth;
+      sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
+    }
+  });
+}
+slider();

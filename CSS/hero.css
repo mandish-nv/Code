@@ -3,8 +3,6 @@
   padding-top: 0.5rem;
   padding-left: 8rem;
   padding-right: 8rem;
-  
-  /* header -> fixed */
   padding-top: 4rem;
 }
 
@@ -57,41 +55,59 @@
 }
 
 .slider{
-  position: relative;
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+  align-items: center;
   background-color: #592200;
+  padding-right: 1rem;
+  gap: 1rem;
+  position: relative;
+  margin: auto;
 }
 
+.slider-wrapper{
+  overflow: hidden;
+}
 
 .slider-content-container{
   display: flex;
+  /* grid-auto-flow: column;  */
   gap: 0.5rem;
-  padding: 0.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  overflow: hidden;
+  margin: 0.5rem;
+  transition: transform 0.5s ease
 }
 
 .slider-content{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
   background-color: #FFE7D9;
-  padding: 0.2rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   border-radius: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  transition: transform 0.5s ease-in-out;
 }
 
 .slider-icon{
-  height: 4.5rem;
-  width: 4.5rem;
+  width: 6.4rem; 
+  height: 5.2rem; 
+  object-fit: cover;
 } 
 
 .slider-content-text{
   color: #592200;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
+}
+
+.arrow-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  z-index: 10;
 }
 
 .arrow::after{
@@ -100,20 +116,24 @@
   height: 3rem;
   vertical-align: -0.125em;
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 24'%3E%3Cpath fill='white' fill-rule='evenodd' d='M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414'/%3E%3C/svg%3E");
-  position: absolute;
+  /* position: absolute; */
 }
 
 .left-arrow::after {
   rotate: 180deg;
-  top: 2.6rem;   
-  left: 0.5rem;  
+  /* top: 2.6rem;   
+  left: 0.5rem;   */
   cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
 }
 
 .right-arrow::after {
-  top: 2.6rem;   
-  right: 0.5rem;  
+  /* top: 2.6rem;   
+  right: 0.5rem;   */
   cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
 }
 
 
