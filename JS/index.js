@@ -3,7 +3,6 @@ import { insertFooter } from "./footer.js";
 
 insertHeader();
 insertFooter();
-recipeSlotDisplay();
 
 export function recipeSlotDisplay() {
   var ajax = new XMLHttpRequest();
@@ -24,7 +23,8 @@ export function recipeSlotDisplay() {
         let recipeName = data[a].recipeName || "Unknown recipeName";
         let chefName = data[a].chefName || "Unknown chefName";
         let category = data[a].category || "Unknown category";
-        let difficultyLevel = data[a].difficultyLevel || "Unknown difficultyLevel";
+        let difficultyLevel =
+          data[a].difficultyLevel || "Unknown difficultyLevel";
         let recipeImage = data[a].recipeImage || "default-image.jpg";
         let views = data[a].views || "0";
 
@@ -62,3 +62,41 @@ export function recipeSlotDisplay() {
     }
   };
 }
+recipeSlotDisplay();
+
+function recipeCategoryDisplay() {
+  const categories = [
+    "Breakfast",
+    "Snacks",
+    "Lunch",
+    "Drink",
+    "Dinner",
+    "Cuisine",
+    "Healthy",
+    "Non-veg",
+    "Veg",
+    "Glutten-free",
+    "Fast",
+    "Appetizers",
+    "Desserts",
+  ];
+  categories.sort();
+
+  let recipeCategoryContainer = "";
+
+  categories.forEach((element)=>{
+    recipeCategoryContainer += `
+        <div class="slider-content">
+          <div class="recipe-image-container">
+            <img src="../images/Icons/Categories/${element}.png" class="slider-icon" />
+          </div>
+          <div>
+            <p class="slider-content-text">${element}</p>
+          </div>
+        </div>
+        `;
+  });
+
+  document.querySelector(".slider-content-container").innerHTML = recipeCategoryContainer;
+}
+recipeCategoryDisplay();

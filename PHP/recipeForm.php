@@ -47,6 +47,8 @@
       <option>Glutten-free</option>
       <option>Appetizers</option>
       <option>Desserts</option>
+      <option>Breakfast</option>
+      <option>Fast</option>
     </select>
     <br><br>
 
