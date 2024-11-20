@@ -20,7 +20,7 @@ if (!$conn) {
 // Prepare the query to prevent SQL injection
 $sql = "SELECT recipeName, chefName, category, difficultyLevel, recipeImage, views 
         FROM recipe 
-        WHERE recipeName = ? OR chefName = ?";
+        WHERE recipeName = ? OR chefName = ? OR category = ?";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
@@ -28,7 +28,7 @@ if (!$stmt) {
     exit();
 }
 
-mysqli_stmt_bind_param($stmt, "ss", $search, $search);
+mysqli_stmt_bind_param($stmt, "sss", $search, $search, $search);
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 

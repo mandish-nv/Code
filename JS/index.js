@@ -84,7 +84,7 @@ function recipeCategoryDisplay() {
 
   categories.forEach((element) => {
     recipeCategoryContainer += `
-        <div class="slider-content">
+        <div class="slider-content" onclick="location.href='../PHP/searchDisplay.php?search=${element}';">
           <div class="recipe-image-container">
             <img src="../images/Icons/Categories/${element}.png" class="slider-icon" />
           </div>
