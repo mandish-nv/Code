@@ -75,7 +75,6 @@ function recipeCategoryDisplay() {
     "Healthy",
     "Non-veg",
     "Veg",
-    "Glutten-free",
     "Fast",
     "Appetizers",
     "Desserts",

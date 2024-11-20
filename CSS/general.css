@@ -45,6 +45,6 @@ ul,ol{
   list-style-position: inside;
 }
 
-i, img, input[type="submit"]{
+i, input[type="submit"]{
   cursor: pointer;
 }

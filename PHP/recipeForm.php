@@ -44,7 +44,6 @@
       <option>Healthy</option>
       <option>Non-veg</option>
       <option>Veg</option>
-      <option>Glutten-free</option>
       <option>Appetizers</option>
       <option>Desserts</option>
       <option>Breakfast</option>
