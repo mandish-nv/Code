@@ -57,7 +57,6 @@ export function recipeSlotDisplay() {
 
         `;
       }
-      console.log(recipeContainer);
       document.querySelector(".recipe-container").innerHTML = recipeContainer;
     }
   };

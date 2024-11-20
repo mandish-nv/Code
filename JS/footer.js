@@ -44,6 +44,5 @@ export function insertFooter() {
         </div>
       </div>
   `;
-
   document.querySelector("footer").innerHTML = footer;
 }

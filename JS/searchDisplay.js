@@ -64,7 +64,6 @@ export function searchRecipeSlotDisplay() {
 
         `;
       }
-      console.log(recipeContainer);
       document.querySelector(".recipe-container").innerHTML = recipeContainer;
     }
   };
