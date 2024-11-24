@@ -25,69 +25,76 @@
 <body>
   <header></header>
 
-  <form name="myForm" action="recipeDBinsert.php" method="post" enctype="multipart/form-data" style="padding-top: 5rem;">
+  <form id="myForm" name="myForm" action="recipeDBinsert.php" method="post" enctype="multipart/form-data" style="padding-top: 5rem;">
     <p>Recipe name: </p>
-    <input type="text" name="recipeName">
+    <input type="text" id="recipeName" name="recipeName" maxlength="20">
+    <div class="error" id="recipeNameError"></div>
     <br><br>
 
     <p>Chef name: </p>
-    <input type="text" name="chefName">
+    <input type="text" id="chefName" name="chefName" maxlength="20">
+    <div class="error" id="chefNameError"></div>
     <br><br>
 
     <p>Category: </p>
-    <select name="category" id="mySelect">
-      <option>Snacks</option>
-      <option>Lunch</option>
-      <option>Drink</option>
-      <option>Dinner</option>
-      <option>Cuisine</option>
-      <option>Healthy</option>
-      <option>Non-veg</option>
-      <option>Veg</option>
-      <option>Appetizers</option>
-      <option>Desserts</option>
-      <option>Breakfast</option>
-      <option>Fast</option>
+    <select id="category" name="category">
+      <option disabled selected value value=""> -- select an option -- </option>
+      <option value="Snacks">Snacks</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Drink">Drink</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Cuisine">Cuisine</option>
+      <option value="Healthy">Healthy</option>
+      <option value="Non-veg">Non-veg</option>
+      <option value="Veg">Veg</option>
+      <option value="Appetizers">Appetizers</option>
+      <option value="Desserts">Desserts</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Fast">Fast</option>
     </select>
+    <div class="error" id="categoryError"></div>
     <br><br>
 
     <p>Difficulty level: </p>
-    <select name="difficultyLevel">
+    <select name="difficultyLevel" id="difficultyLevel">
       <option>Very easy</option>
       <option>Easy</option>
-      <option>Moderate</option>
+      <option selected>Moderate</option>
       <option>Difficult</option>
       <option>Very difficult</option>
     </select>
     <br><br>
 
     <p>Serving portion: </p>
-    <input type="text" name="servingPortion">
+    <input type="number" id="servingPortion" name="servingPortion">
     <br><br>
 
     <p>Time required: </p>
-    <input type="number" name="timeRequiredHour">hr
-    <input type="number" name="timeRequiredMinute">min
+    <input type="number" id="timeRequiredHour" name="timeRequiredHour">hr
+    <input type="number" id="timeRequiredMinute" name="timeRequiredMinute">min
     <br><br>
 
     <p>Recipe image: </p>
-    <input type="file" name="recipeImage" accept="image/*">
+    <input type="file" id="recipeImage" name="recipeImage" accept="file/*">
+    <div class="error" id="fileError"></div>
     <br><br>
 
     <p>Ingredients required: </p>
-    <textarea name="ingredientsRequired" style="height: 8rem; width: 50rem;"></textarea>
+    <textarea id="ingredientsRequired" name="ingredientsRequired" style="height: 8rem; width: 50rem;"></textarea>
+    <div class="error" id="ingredientsRequiredError"></div>
     <br><br>
 
     <p>Procedure: </p>
-    <textarea name="procedure" style="height: 8rem; width: 50rem;"></textarea>
+    <textarea id="procedure" name="procedure" style="height: 8rem; width: 50rem;"></textarea>
+    <div class="error" id="procedureError"></div>
     <br><br>
 
-    <p>Nutritional Facts: </p>
-    <textarea name="nutritionalFacts" style="height: 5rem; width: 50rem;"></textarea>
+    <p>Nutritional Facts: (optional)</p>
+    <textarea id="nutritionalFacts" name="nutritionalFacts" style="height: 5rem; width: 50rem;"></textarea>
     <br><br>
 
-    <p>Tips & Tricks: </p>
-    <textarea name="tipsTricks" style="height: 5rem; width: 50rem;"></textarea>
+    <p>Tips & Tricks: (optional)</p>
+    <textarea id="tipsTricks" name="tipsTricks" style="height: 5rem; width: 50rem;"></textarea>
     <br><br>
 
     <input type="submit" value="Submit">
