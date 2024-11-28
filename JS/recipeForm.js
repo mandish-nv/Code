@@ -128,7 +128,29 @@ document.getElementById("myForm").addEventListener("submit", (event) => {
     return;
   }
 
-  //insert default values
+  if(!difficultyLevel){
+    document.getElementById("difficultyLevel").value = "Moderate";
+  }
+
+  if(!servingPortion){
+    document.getElementById("servingPortion").value = 1;
+  }
+
+  if(!timeRequiredHour){
+    document.getElementById("timeRequiredHour").value = 0;
+  }
+
+  if(!timeRequiredMinute){
+    document.getElementById("timeRequiredMinute").value = 0;
+  }
+
+  if(!nutritionalFacts){
+    document.getElementById("nutritionalFacts").value = "Nutritional Facts Unavailable";
+  }
+  
+  if(!tipsTricks){
+    document.getElementById("tipsTricks").value = "Tips & Tricks Unavailabale";
+  }
 
   //Success
   alert("Form submitted successfully!");
