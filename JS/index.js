@@ -124,7 +124,7 @@ function slider() {
   // Next button functionality
   document.querySelector(".right-arrow").addEventListener("click", () => {
     if (Math.abs(currentPosition) < maxScrollPosition) {
-      currentPosition -= itemWidth;
+      currentPosition -= (itemWidth+itemWidth);
       sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
     }
   });
@@ -132,7 +132,7 @@ function slider() {
   // Previous button functionality
   document.querySelector(".left-arrow").addEventListener("click", () => {
     if (currentPosition < 0) {
-      currentPosition += itemWidth;
+      currentPosition += (itemWidth+itemWidth);
       sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
     }
   });

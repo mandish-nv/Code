@@ -38,26 +38,29 @@ export function searchRecipeSlotDisplay() {
         recipeContainer += `
             <div class="recipe-slot" onclick="location.href='../PHP/recipe.php?recipeName=${recipeName}&chefName=${chefName}';"> 
               <div class="favorites-absolute">
-                <i class="fa-regular fa-heart fa-2x" style="color: #993b00"></i>
+                <i class="fa-regular fa-heart fa-2x" style="color: #FFFFFF"></i>
               </div>
               <div>
                 <img src="../uploadedImages/${recipeImage}" class="recipe-image" />
               </div>
               <div class="recipe-info">
                 <div>
-                  <p>${recipeName}</p>
+                  <p class="recipeNameText">${recipeName}</p>
                 </div>
                 <div>
-                  <p>${chefName}</p>
+                  <p class="chefNameText">${chefName}</p>
                 </div>
                 <div>
-                  <p>Category: ${category}</p>
+                  <p class="recipe-info-title">Category: </p>
+                  <p class="recipe-info-description">${category}</p>
                 </div>
                 <div>
-                  <p>Difficulty level: ${difficultyLevel}</p>
+                  <p class="recipe-info-title"> Difficulty level: </p>
+                  <p class="recipe-info-description">${difficultyLevel}</p>
                 </div>
                 <div>
-                  <p>${views} views</p>
+                  <i class="fa-regular fa-eye" style="color: #0F4FA8"></i>
+                  <p class="viewsText"> ${views} views</p>
                 </div>
               </div>
             </div>

@@ -26,9 +26,9 @@
   <header></header>
 
   <main>
-      <section class="recipe">
+      <section class="recipe" style="padding:6rem 0 6rem 0">
         <div>
-          <p class="recipe-title">Search result for: </p>
+          <p class="recipe-title">Search result: </p>
         </div>
         <div class="recipe-container-main">
           <div class="recipe-container"></div>
