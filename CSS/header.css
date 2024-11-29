@@ -12,6 +12,8 @@ header{
   left: 0;
   right: 0;
   z-index: 10;
+
+  box-shadow: 0px 5px 30px rgb(165, 165, 165);
 }
 
 .title-text{
@@ -58,7 +60,7 @@ header{
 .profile-picture-container{
   display: flex;
   align-items: center;
-
+  cursor: pointer;
 }
 
 .profile-picture-image{
