@@ -1,27 +1,27 @@
 export function insertFooter() {
   const footer = `
   <div class="footer-left">
-        <div>
+        <div class="footer-title-text">
           <p>Ready to cook?</p>
           <p>Sign up for our weekly newsletters!</p>
         </div>
         <div class="email-entry">
           <div>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" placeholder="Enter your email" class="email-entry-input">
           </div>
           <div>
-            <input type="submit" value="Sign up">
+            <input type="submit" value="Sign up" class="sign-up-button">
           </div>
         </div>
         <div>
-          <div>
+          <div class="footer-platform-text">
             <p>Follow us on other platforms</p>
           </div>
-          <div>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
+          <div class="icon-container">
+            <i class="fa-brands fa-xl fa-facebook-f" style="color: #592200;" onclick="location.href='facebook.com';"></i>
+            <i class="fa-brands fa-xl fa-instagram" style="color: #592200;" onclick="location.href='instagram.com';"></i>
+            <i class="fa-brands fa-xl fa-x-twitter" style="color: #592200;" onclick="location.href='x.com';"></i>
+            <i class="fa-brands fa-xl fa-youtube" style="color: #592200;" onclick="location.href='youtube.com';"></i>
           </div>
         </div>
       </div>

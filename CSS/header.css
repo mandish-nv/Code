@@ -1,10 +1,10 @@
-header{
+header {
   height: 3.5rem;
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #592200;
-  background-color: #FFE7D9;
+  background-color: #ffe7d9;
   padding-left: 3rem;
   padding-right: 3rem;
 
@@ -16,7 +16,7 @@ header{
   box-shadow: 0px 5px 30px rgb(165, 165, 165);
 }
 
-.title-text{
+.title-text {
   display: block;
   font-family: "Katibeh", serif;
   font-weight: 400;
@@ -27,53 +27,52 @@ header{
   cursor: pointer;
 }
 
-.right-utilities{
+.right-utilities {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.search-box{
+.search-box {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #FFCEB0;
+  background-color: #ffceb0;
   border: 1px solid #592200;
   border-radius: 0.75rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-.search-box-input{
+.search-box-input {
   height: 2rem;
   width: 16rem;
-  
+
   border: none;
-  background-color: #FFCEB0;
+  background-color: #ffceb0;
   color: #592200;
 }
 
-.search-box-input:focus{
+.search-box-input:focus {
   outline: none;
 }
 
-.profile-picture-container{
+.profile-picture-container {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.profile-picture-image{
-  width: 2rem; 
+.profile-picture-image {
+  width: 2rem;
   height: 2rem;
   border-radius: 1rem;
   border: 1px solid #993b00;
 }
 
-
 /* footer */
-footer{
-  background-color: #FFCEB0;
+footer {
+  background-color: #ffceb0;
   border-top: 1px solid #993b00;
   padding: 1.5rem 3rem 1.5rem 3rem;
 
@@ -82,22 +81,87 @@ footer{
   align-items: center;
 }
 
-.footer-left{
+footer p {
+  color: #592200;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.footer-left p{
+.footer-left p {
   display: block;
 }
 
-.email-entry{
+.footer-title-text p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.email-entry {
   display: flex;
   gap: 1rem;
 }
 
-.footer-right{
+.email-entry-input {
+  height: 2.5rem;
+  width: 16rem;
+
+  border: solid 1px #592200;
+  border-radius: 0.5rem;
+  background-color: #ffe7d9;
+  color: #592200;
+  padding: 0.5rem;
+
+  box-shadow: 0px 1px 5px rgb(126, 126, 126);
+}
+
+.email-entry-input:focus {
+  outline: none;
+}
+
+.sign-up-button {
+  display: inline;
+  background-color: #0f4fa8;
+  padding: 0.6rem;
+  border: 1px solid #051c3b;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e7edf6;
+
+  box-shadow: 0px 1px 5px rgb(126, 126, 126);
+}
+
+.footer-platform-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.icon-container i {
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+}
+
+.footer-right {
   display: flex;
   gap: 2rem;
+}
+
+.footer-right ul {
+  list-style-type: none;
+}
+
+.footer-right ul li {
+  color: #592200;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  padding-left: 2rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
 }
