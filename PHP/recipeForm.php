@@ -19,89 +19,146 @@
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/header.css" />
   <link rel="stylesheet" href="../CSS/hero.css" />
+  <link rel="stylesheet" href="../CSS/recipeForm.css" />
 
 </head>
 
 <body>
   <header></header>
 
-  <form id="myForm" name="myForm" action="recipeDBinsert.php" method="post" enctype="multipart/form-data" style="padding-top: 5rem;">
-    <p>Recipe name: </p>
-    <input type="text" id="recipeName" name="recipeName" maxlength="20">
-    <div class="error" id="recipeNameError"></div>
-    <br><br>
+  <section class="recipeForm">
+    <div class="center-align">
+      <p class="recipe-title">Enter your recipe: </p>
+    </div>
 
-    <p>Chef name: </p>
-    <input type="text" id="chefName" name="chefName" maxlength="20">
-    <div class="error" id="chefNameError"></div>
-    <br><br>
+    <form id="myForm" name="myForm" action="recipeDBinsert.php" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <th>
+            <p>Recipe name: </p>
+          </th>
+          <td><input type="text" id="recipeName" name="recipeName" maxlength="20">
+            <div class="error" id="recipeNameError"></div>
+          </td>
+        </tr>
 
-    <p>Category: </p>
-    <select id="category" name="category">
-      <option disabled selected value value=""> -- select an option -- </option>
-      <option value="Snacks">Snacks</option>
-      <option value="Lunch">Lunch</option>
-      <option value="Drink">Drink</option>
-      <option value="Dinner">Dinner</option>
-      <option value="Cuisine">Cuisine</option>
-      <option value="Healthy">Healthy</option>
-      <option value="Non-veg">Non-veg</option>
-      <option value="Veg">Veg</option>
-      <option value="Appetizers">Appetizers</option>
-      <option value="Desserts">Desserts</option>
-      <option value="Breakfast">Breakfast</option>
-      <option value="Fast">Fast</option>
-    </select>
-    <div class="error" id="categoryError"></div>
-    <br><br>
+        <tr>
+          <th>
+            <p>Chef name: </p>
+          </th>
+          <td><input type="text" id="chefName" name="chefName" maxlength="20">
+            <div class="error" id="chefNameError"></div>
+          </td>
+        </tr>
 
-    <p>Difficulty level: </p>
-    <select name="difficultyLevel" id="difficultyLevel">
-      <option>Very easy</option>
-      <option>Easy</option>
-      <option selected>Moderate</option>
-      <option>Difficult</option>
-      <option>Very difficult</option>
-    </select>
-    <br><br>
+        <tr>
+          <th>
+            <p>Category: </p>
+          </th>
+          <td><select id="category" name="category">
+              <option disabled selected value value=""> -- select an option -- </option>
+              <option value="Snacks">Snacks</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Drink">Drink</option>
+              <option value="Dinner">Dinner</option>
+              <option value="Cuisine">Cuisine</option>
+              <option value="Healthy">Healthy</option>
+              <option value="Non-veg">Non-veg</option>
+              <option value="Veg">Veg</option>
+              <option value="Appetizers">Appetizers</option>
+              <option value="Desserts">Desserts</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Fast">Fast</option>
+            </select>
+            <div class="error" id="categoryError"></div>
+          </td>
+        </tr>
 
-    <p>Serving portion: </p>
-    <input type="number" id="servingPortion" name="servingPortion">
-    <br><br>
+        <tr>
+          <th>
+            <p>Difficulty level: </p>
+          </th>
+          <td><select name="difficultyLevel" id="difficultyLevel">
+              <option>Very easy</option>
+              <option>Easy</option>
+              <option selected>Moderate</option>
+              <option>Difficult</option>
+              <option>Very difficult</option>
+            </select></td>
+        </tr>
 
-    <p>Time required: </p>
-    <input type="number" id="timeRequiredHour" name="timeRequiredHour">hr
-    <input type="number" id="timeRequiredMinute" name="timeRequiredMinute">min
-    <br><br>
+        <tr>
+          <th>
+            <p>Serving portion: </p>
+          </th>
+          <td><input type="number" id="servingPortion" name="servingPortion"></td>
+        </tr>
 
-    <p>Recipe image: </p>
-    <input type="file" id="recipeImage" name="recipeImage" accept="file/*">
-    <div class="error" id="fileError"></div>
-    <br><br>
+        <tr>
+          <th>
+            <p>Time required: </p>
+          </th>
+          <td><input type="number" id="timeRequiredHour" name="timeRequiredHour">
+            <p> hr </p>
+            <input type="number" id="timeRequiredMinute" name="timeRequiredMinute">
+            <p> min </p>
+          </td>
+        </tr>
 
-    <p>Ingredients required: </p>
-    <textarea id="ingredientsRequired" name="ingredientsRequired" style="height: 8rem; width: 50rem;"></textarea>
-    <div class="error" id="ingredientsRequiredError"></div>
-    <br><br>
+        <tr>
+          <th>
+            <p>Recipe image: </p>
+          </th>
+          <td><input type="file" id="recipeImage" name="recipeImage" accept="file/*">
+            <div class="error" id="fileError"></div>
+          </td>
+        </tr>
 
-    <p>Procedure: </p>
-    <textarea id="procedure" name="procedure" style="height: 8rem; width: 50rem;"></textarea>
-    <div class="error" id="procedureError"></div>
-    <br><br>
+        <tr>
+          <th>
+            <p>Ingredients<br>required: </p>
+          </th>
+          <td><textarea id="ingredientsRequired" name="ingredientsRequired"
+              style="height: 16rem; width: 50rem;"></textarea>
+            <div class="error" id="ingredientsRequiredError"></div>
+          </td>
+        </tr>
 
-    <p>Nutritional Facts: (optional)</p>
-    <textarea id="nutritionalFacts" name="nutritionalFacts" style="height: 5rem; width: 50rem;"></textarea>
-    <br><br>
+        <tr>
+          <th>
+            <p>Procedure: </p>
+          </th>
+          <td><textarea id="procedure" name="procedure" style="height: 20rem; width: 50rem;"></textarea>
+            <div class="error" id="procedureError"></div>
+          </td>
+        </tr>
 
-    <p>Tips & Tricks: (optional)</p>
-    <textarea id="tipsTricks" name="tipsTricks" style="height: 5rem; width: 50rem;"></textarea>
-    <br><br>
+        <tr>
+          <th>
+            <p>Nutritional Facts: <br>(optional)</p>
+          </th>
+          <td><textarea id="nutritionalFacts" name="nutritionalFacts" style="height: 12rem; width: 50rem;"></textarea>
+          </td>
+        </tr>
 
-    <input type="submit" value="Submit">
-  </form>
+        <tr>
+          <th>
+            <p>Tips & Tricks: <br>(optional)</p>
+          </th>
+          <td><textarea id="tipsTricks" name="tipsTricks" style="height: 12rem; width: 50rem;"></textarea></td>
+        </tr>
+      </table>
+
+      <div class="center-align" style="padding-top:3rem">
+        <input type="submit" value="Submit" class="submitButton">
+      </div>
+
+    </form>
+  </section>
 
   <footer></footer>
 
   <script type="module" src="../JS/recipeForm.js"></script>
 </body>
+
 </html>

@@ -48,3 +48,11 @@ ul,ol{
 i, input[type="submit"]{
   cursor: pointer;
 }
+
+/* remove arrows from input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

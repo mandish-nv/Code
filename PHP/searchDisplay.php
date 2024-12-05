@@ -26,18 +26,19 @@
   <header></header>
 
   <main>
-      <section class="recipe" style="padding:6rem 0 6rem 0">
-        <div>
-          <p class="recipe-title">Search result: </p>
-        </div>
-        <div class="recipe-container-main">
-          <div class="recipe-container"></div>
-        </div>
-      </section>
-    </main>
+    <section class="recipe" style="padding:6rem 0 6rem 0">
+      <div>
+        <p class="recipe-title">Search result: </p>
+      </div>
+      <div class="recipe-container-main">
+        <div class="recipe-container"></div>
+      </div>
+    </section>
+  </main>
 
   <footer></footer>
 
-  <script  type="module" src="../JS/searchDisplay.js"></script>
+  <script type="module" src="../JS/searchDisplay.js"></script>
 </body>
+
 </html>
