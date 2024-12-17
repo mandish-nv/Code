@@ -1,5 +1,5 @@
 .recipeForm {
-  background-color: #ffefe6b3;
+  background-color: #ffefe653;
   padding: 6rem 0 6rem 0;
 }
 
@@ -49,9 +49,12 @@
 }
 
 #myForm input[type="text"]:focus,
-input[type="number"]:focus {
-  outline: #592200;
-  outline-width: 2rem;
+#myForm input[type="number"]:focus,
+#myForm select:focus,
+#myForm option:focus,
+#myForm textarea:focus {
+  border: 2px solid #592200;
+  outline: none;
 }
 
 #myForm input[type="text"]{
@@ -61,6 +64,32 @@ input[type="number"]:focus {
 #myForm input[type="number"]{
   width: 3rem;
 }
+
+#myForm input[type="file"] {
+  color: #592200;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#myForm input[type="file"]::-webkit-file-upload-button {
+  background-color: #86441b;
+  color: #fff;
+  border: 1px solid #592200;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myForm input[type="file"]::-webkit-file-upload-button:hover{
+  background-color: #ecc6ae;
+  color: #592200;
+}
+
 
 .submitButton{
   display: inline;
@@ -73,6 +102,17 @@ input[type="number"]:focus {
   font-size: 1rem;
   font-weight: 500;
   color: #e7edf6;
+  transition: 0.2s;
 
   box-shadow: 0px 1px 5px rgb(126, 126, 126);
+}
+
+.submitButton:hover{
+  background-color: #ecc6ae;
+  color: #592200;
+}
+
+.submitButton:active{
+  background-color: #592200;
+  color: #e7edf6;
 }

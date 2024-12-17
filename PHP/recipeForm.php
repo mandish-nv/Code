@@ -119,7 +119,7 @@
             <p>Ingredients<br>required: </p>
           </th>
           <td><textarea id="ingredientsRequired" name="ingredientsRequired"
-              style="height: 16rem; width: 50rem;"></textarea>
+              style="height: 16rem; width: 44rem;"></textarea>
             <div class="error" id="ingredientsRequiredError"></div>
           </td>
         </tr>
@@ -128,7 +128,7 @@
           <th>
             <p>Procedure: </p>
           </th>
-          <td><textarea id="procedure" name="procedure" style="height: 20rem; width: 50rem;"></textarea>
+          <td><textarea id="procedure" name="procedure" style="height: 20rem; width: 44rem;"></textarea>
             <div class="error" id="procedureError"></div>
           </td>
         </tr>
@@ -137,7 +137,7 @@
           <th>
             <p>Nutritional Facts: <br>(optional)</p>
           </th>
-          <td><textarea id="nutritionalFacts" name="nutritionalFacts" style="height: 12rem; width: 50rem;"></textarea>
+          <td><textarea id="nutritionalFacts" name="nutritionalFacts" style="height: 12rem; width: 44rem;"></textarea>
           </td>
         </tr>
 
@@ -145,7 +145,7 @@
           <th>
             <p>Tips & Tricks: <br>(optional)</p>
           </th>
-          <td><textarea id="tipsTricks" name="tipsTricks" style="height: 12rem; width: 50rem;"></textarea></td>
+          <td><textarea id="tipsTricks" name="tipsTricks" style="height: 12rem; width: 44rem;"></textarea></td>
         </tr>
       </table>
 

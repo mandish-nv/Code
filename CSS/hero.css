@@ -4,6 +4,8 @@
   padding-left: 8rem;
   padding-right: 8rem;
   padding-top: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-chef-container {

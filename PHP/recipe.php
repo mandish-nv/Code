@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../CSS/general.css" />
     <link rel="stylesheet" href="../CSS/header.css" />
     <link rel="stylesheet" href="../CSS/recipe.css" />
-  </head>
+  </head> 
   <body>
     <header></header>
 
