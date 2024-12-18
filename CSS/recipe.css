@@ -1,47 +1,72 @@
-.recipe-nav{
+.recipe-nav {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  background-color: #FFF1D9;
-  border-left: 1px solid #592200;
-  
+  background-color: #fff1d9;
+  border: 1px solid #592200;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 30px rgb(160, 160, 160);
   padding: 1.5rem;
 
   position: fixed;
-  right: 0rem;
+  right: 1rem;
   left: 70rem;
-  top: 3.5rem;
-  bottom: 0rem;
+  top: 7rem;
+  bottom: 7rem;
   z-index: 10;
 }
 
-.recipe-nav p{
+.recipe-nav p {
   display: block;
 }
 
-.recipe-body-main{
-  padding-top: 5rem;
+.recipe-nav-title {
+  color: #592200;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-.recipe-title-info{
+.recipe-nav-contents p {
+  color: #732c00;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  padding-top: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.recipe-nav-contents a:hover {
+  color: #c26d38;
+}
+
+.recipe-nav-contents a,
+.recipe-nav-contents a:active {
+  color: #732c00;
+}
+
+/* ----Main---- */
+
+.recipe-title-info {
+  background-color: #ffefe6b3;
   display: flex;
+  padding-top: 6rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid #592200;
   gap: 2rem;
   align-items: center;
 }
 
-.recipe-title-left{
+.recipe-title-left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.recipe-title-main{
-  background-color: #FFCEB0;
+.recipe-title-main {
+  background-color: #ffceb0;
   border: 1px solid #592200;
   border-radius: 1rem;
   padding: 1rem;
@@ -51,26 +76,36 @@
   gap: 1rem;
 }
 
-.recipe-title-main-division1{
+.recipe-title-main-division1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.recipe-name{
+.recipe-name-div {
+  padding-right: 2rem;
+}
+
+.recipe-name {
   color: #592200;
   font-size: 2.2rem;
   font-weight: 700;
 }
 
-.recipe-title-main-division2{
+.recipe-title-main-division2 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.recipe-title-description{
-  background-color: #FFF1D9;
+.chef-name {
+  color: #913700;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.recipe-title-description {
+  background-color: #fff1d9;
   border: 1px solid #592200;
   border-radius: 1rem;
   padding: 1rem;
@@ -80,84 +115,105 @@
   gap: 0.75rem;
 }
 
-.recipe-title-description p{
-  display: block;
+.recipe-title-description p {
   padding-bottom: 0.25rem;
 }
 
-.recipe-title-image{
-  height:20rem;
-  width: 40rem;
-  border: 1px solid #592200;
-  border-radius: 1rem;
-
+.recipe-title-description-title {
+  color: #592200;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-#ingredients-required-section{
-  padding: 3rem 18rem 3rem 3rem;
+.recipe-title-description-info {
+  color: #913700;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.recipe-title-image {
+  height: 18rem;
+  /* width: 40rem; */
+  border: 1px solid #592200;
+  border-radius: 1rem;
+  background-color: #ecc6ae;
+}
+
+#ingredients-required-section {
+  background-color: #fffcfab3;
+  padding: 4rem 18rem 4rem 3rem;
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 3rem;
   border-bottom: 1px solid #592200;
 }
 
-#ingredients-required-section div{
-  display: flex;
-  gap: 1rem;
-  align-items: baseline;
-}
-
-.ingredients-content-container{
-  padding: 1.5rem;
+.ingredients-content-container,
+.procedure-content-container,
+.additional-information-content {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #FFEFE6;
+  background-color: #ffefe6;
   border: 1px solid #592200;
   border-radius: 1rem;
 }
 
-#procedure-section{
-  padding: 3rem 18rem 3rem 3rem;
+.ingredients-content-container p,
+.procedure-content-container p {
+  color: #592200;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#procedure-section {
+  background-color: #ffefe6b3;
+  padding: 4rem 18rem 4rem 3rem;
 
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 2rem;
-  border-bottom: 1px solid #592200; 
+  gap: 3rem;
+  border-bottom: 1px solid #592200;
 }
 
-#procedure-section ol li{
+/* #procedure-section ol li{
   margin-top: 1rem;
-}
+} */
 
-#procedure-section ol p{
+/* #procedure-section ol p{
   display: block;
   text-align: justify;
   margin: 0.5rem;
-}
+} */
 
-#additional-information-section{
-  padding: 3rem 18rem 3rem 3rem;
+#additional-information-section {
+  background-color: #fffcfab3;
+  padding: 4rem 18rem 4rem 3rem;
 
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 2rem;
-  border-bottom: 1px solid #592200; 
+  gap: 3rem;
+  border-bottom: 1px solid #592200;
 }
 
-.additional-information-content-container{
+.additional-information-content-container {
   display: flex;
   gap: 2rem;
 }
 
-.additional-information-content{
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  background-color: #FFEFE6;
-  border: 1px solid #592200;
-  border-radius: 1rem;
+.additional-information-content-container-title,
+.additional-information-content-container-info {
+  color: #592200;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
- 
+
+.additional-information-content-container-title {
+  font-size: 2rem;
+  font-weight: 600;
+}

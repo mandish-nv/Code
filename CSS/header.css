@@ -135,6 +135,17 @@ footer p {
   color: #e7edf6;
 
   box-shadow: 0px 1px 5px rgb(126, 126, 126);
+  transition: 0.2s;
+}
+
+.sign-up-button:hover {
+  background-color: #e7edf6;
+  color: #0f4fa8;
+}
+
+.sign-up-button:active {
+  background-color: #0f4fa8;
+  color: #e7edf6;
 }
 
 .footer-platform-text {
