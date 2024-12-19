@@ -117,6 +117,8 @@
 
 .recipe-title-description p {
   padding-bottom: 0.25rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4rem;
 }
 
 .recipe-title-description-title {
@@ -145,7 +147,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 3rem;
   border-bottom: 1px solid #592200;
 }
@@ -167,6 +169,7 @@
   color: #592200;
   font-size: 1.2rem;
   font-weight: 500;
+  line-height: 1.8rem;
 }
 
 #procedure-section {
@@ -174,7 +177,7 @@
   padding: 4rem 18rem 4rem 3rem;
 
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   gap: 3rem;
   border-bottom: 1px solid #592200;
@@ -192,10 +195,10 @@
 
 #additional-information-section {
   background-color: #fffcfab3;
-  padding: 4rem 18rem 4rem 3rem;
+  padding: 4rem 18rem 8rem 3rem;
 
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   gap: 3rem;
   border-bottom: 1px solid #592200;
